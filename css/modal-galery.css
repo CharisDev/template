@@ -1,0 +1,321 @@
+/**************************/
+/* M0DAL IMAGE GALLERY*/
+/**************************/
+
+/* TO MAKE IT WORK */
+.hidden {
+  display: none;
+}
+
+/* OVERLAY */
+body {
+  position: relative;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  z-index: 100;
+}
+
+/* MODAL WINDOW */
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 70%;
+  height: 75%;
+
+  backdrop-filter: blur(3px);
+  border-radius: 1rem;
+  z-index: 150;
+
+  /* Lai redzu, kur beidzas modālais logs */
+  /* border: solid 1rem #000; */
+}
+
+/* MODAL WINDOW CONTENT */
+.modal-content {
+  position: relative;
+  height: 100%;
+}
+
+.modal-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-swiper .modal-slide {
+  border-top: solid 4rem transparent;
+  border-bottom: solid 4rem transparent;
+}
+
+.modal-slide .modal-img img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* PAGINATION */
+/* target all bullets */
+.modal-swiper .swiper-pagination-bullet {
+  background-color: #6f6f6f;
+  opacity: 1;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+/* target the active bullet */
+.modal-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* BUTTONS */
+.modal-swiper .swiper-button-prev::after,
+.modal-swiper .swiper-button-next::after {
+  color: #fff;
+}
+
+.close-modal-1 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-2 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-3 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-4 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-5 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-6 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-7 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-8 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-9 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-10 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-11 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}
+
+.close-modal-12 {
+  position: absolute;
+  top: -1.6rem;
+  right: 0;
+
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+
+  color: #fff;
+  cursor: pointer;
+
+  background: none;
+  z-index: 200;
+
+  border: solid 0.1rem #fff;
+  border-radius: 100%;
+}

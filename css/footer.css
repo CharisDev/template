@@ -1,0 +1,28 @@
+/**************************/
+/* FOOTER SECTION */
+/**************************/
+
+/* footer {
+  border-top: solid 0.1rem rgba(118, 118, 118, 0.5);
+} */
+
+footer p {
+  color: #767676;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4.4rem;
+}
+
+/**************************/
+/* END IMAGE SECTION */
+/**************************/
+
+.decorative-background {
+  height: 100vh;
+  max-height: 100rem;
+  width: 100%;
+  /* background-image: url(/img/decorative-img-opt.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

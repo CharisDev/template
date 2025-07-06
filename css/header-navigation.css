@@ -1,0 +1,95 @@
+/**************************/
+/* HEADER */
+/**************************/
+
+/* Main header and navigation is outside of a fixed container width. */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(58, 58, 60, 0.97); */
+  background-color: rgba(0, 0, 0, 0.97);
+
+  /* For navigation to be sticky we need to set a fixed height. Usually we allow the content to define the height and then add some padding, but not in this case. */
+  height: 7.4rem;
+  /* Padding, but on the sides - space between the browser and the content. */
+  padding: 0 3.2rem;
+
+  /* Relative to the absolutely positioned navigation. */
+  position: relative;
+}
+
+.logo {
+  height: 6.4rem;
+  /* width: 8.6rem; */
+}
+/* In media Queries height is:
+height: 4rem; at max-width: 44rem */
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+@media only screen and (min-width: 398px) {
+.main-nav {
+  padding: 0 5rem;
+}}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  /* text-transform: uppercase; */
+
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #516901;
+}
+
+/* Mobile Navigation */
+
+.btn-mobile-nav {
+  border: none;
+  cursor: pointer;
+  background: none;
+
+  /* We show it in media queries, but make it hidden by default until we reach mobile size. */
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 4.4rem;
+  color: #fff;
+}
+
+/* We hide the close icon button and leave the default one visible. */
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* Sticky Navigation */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+@media only screen and (min-width: 398px) {
+.sticky {
+  padding-left: 5rem;
+}}

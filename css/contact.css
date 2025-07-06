@@ -1,0 +1,66 @@
+/**************************/
+/* CONTACT SECTION */
+/**************************/
+
+section#kontakti {
+background-color: #000000;
+color: #ccc;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact .heading-secondary {
+  padding-top: 4rem;
+  font-weight: 500;
+}
+
+.avatar{
+    width: 50%;
+    max-width: 150px;
+    border-radius: 50%;
+    border: 4px solid #516901;
+    /* border: 3px solid #151515; */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 500;
+  margin: 4rem 0 8rem 0;
+
+  color: #cccccc;
+}
+
+.social-icon-links {
+  margin-bottom: 4rem;
+}
+
+.social-icon {
+  font-size: 5.2rem;
+  color: #bebebe;
+ 
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  color: #516901;
+  /* color: #767676; */
+}
+
+.contact-link:link,
+.contact-link:visited {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  color: #516901;
+  /* color: #767676; */
+}

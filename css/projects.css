@@ -1,0 +1,143 @@
+/**************************/
+/* PROJECTS SECTION */
+/**************************/
+
+/* ❗I encountered bugs in my JavaScript code, so I resorted to using repeating classes. While I acknowledge it's not the best practice, as a junior developer, I saw this as a viable solution to address the issues. */
+
+/* BUTTONS */
+.swiper2 .swiper-button-prev::after,
+.swiper2 .swiper-button-next::after {
+  color: #fff;
+}
+
+/* PROJECT IMAGES */
+.project1 {
+  background-image: url(/img/1-proj/Proj1-cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.project2 {
+  background-image: url(/img/2-proj/Proj2-cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.project3 {
+  background-image: url(/img/3-proj/Proj3-cover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/* PROJECT - General*/
+.project {
+  height: 42rem;
+  /* height: 62rem; */
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* OVERLAY DESKTOP*/
+.overlay-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(145, 112, 80, 0.8);
+  background-color: rgba(81, 105, 1, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /* background-color: rgba(58, 58, 60, 0.8); */
+  color: #fff;
+
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: all 0.8s;
+
+  transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  /* 1) Hide the element visually */
+  opacity: 0;
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+  /* 3) Hide it from screen readers */
+  visibility: hidden;
+}
+
+.project-slide .project .overlay-desktop {
+  transition: all 0.3s;
+}
+
+.project-slide .project:hover .overlay-desktop {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateY(-0%);
+  -moz-transform: translateY(-0%);
+  -webkit-transform: translateY(-0%);
+}
+
+/* OVERLAY TABLETS AND MOBILE*/
+.overlay-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(145, 112, 80, 0.8);
+  background-color: rgba(81, 105, 1, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /* background-color: rgba(58, 58, 60, 0.8); */
+
+  color: #fff;
+  box-shadow: rgba(128, 128, 128, 0.425) 0 0 1rem;
+
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  display: none;
+}
+
+/* OVERLAY CONTENT STYLE */
+.text-over {
+  padding: 3rem 3.2rem 2rem 3.2rem;
+}
+
+.btn-over {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* background-color: #516901e2; */
+  background-color: #916F50;
+
+  /* background-color: rgba(58, 58, 60, 0.9); */
+
+  padding: 0.8rem 3.6rem 0.8rem 3.6rem;
+  margin: 0 2rem 2rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn-over:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.9);
+
+  background-color: #516901;
+  /* background-color: #916F50; */
+  color: white;
+
+  /* color: rgba(58, 58, 60, 0.9); */
+}

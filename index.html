@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Mājaslapu un internetveikalu izstrādes pakalpojumi - palīdzēsim izvēlēties biznesa vajadzībām labāko risinājumu tava budžeta ietvaros. Piesakies pirmajai konsultācijai!"
+    />
+    <meta name="author" content="Arita Misus" />
+    <meta
+      name="keywords"
+      content="uzņēmuma vizītkartes mājaslapa, portfolio mājaslapas izveide, mājaslapu web izstrāde, e-veikala uzstādīšana, 
+      mājaslapas konsultācijas, mājaslapas risinājumi, platformas mājaslapai, mājaslapas projekts, izveidot mājaslapu, mājaslapu aģentūra"
+    />
+
+    <!-- Meta Title -->
+    <title>Mājaslapu izstrādes pakalpojumi | Arita Misus </title>
+
+    <!-- Theme color for the address bar (mobile navigation)-->
+    <meta name="theme-color" content="#3a3a3c" />
+
+    <!-- OG tags -->
+    <meta
+      property="og:title"
+      content="Mājaslapu izstrādes pakalpojumi | Arita Misus"
+    />
+    <meta
+      property="og:description"
+      content="Mājaslapu un internetveikalu izstrādes pakalpojumi - palīdzēsim izvēlēties biznesa vajadzībām labāko risinājumu tava budžeta ietvaros. Piesakies pirmajai konsultācijai!"
+    />
+    <!-- <meta property="og:image" content="img/hero-img-opt.jpg" /> -->
+     <meta property="og:image" content="img/hero-img.png" />
+    <meta property="og:url" content="https://www.aritamisus.lv" />
+
+    <!-- Organization structure data markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Arita Misus",
+        "url": "https://aritamisus.lv/",
+        "logo": "https://aritamisus.lv/logo/aritamisus-logo.svg",
+        "description": "Arita Misus web developer specializing in providing personalized solutions.",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+371 11111111",
+            "contactType": "customer service"
+          }
+        ],
+        "email": "arita.misus@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Vilhelma Purvīša 1",
+          "addressLocality": "Rīga",
+          "postalCode": "LV-1050",
+          "addressCountry": "Latvia"
+        },
+        "sameAs": [
+          "https://www.instagram.com/arita.misus",
+          "https://www.linkedin.com/in/arita-misus"
+        ]
+      }
+    </script>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/aritamisus-logo.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/aritamisus-logo.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/aritamisus-logo.svg"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <!-- https://maxst.icons8.com/line-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- CSS stylesheets -->
+    <!-- <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-part2.css" /> -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header-navigation.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/modal-galery.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- Swiper.js from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header sticky">
+      <!-- LOGO as Navigation -->
+      <a href="#" aria-label="Uz sākumu">
+        <img
+          class="logo"
+          src="logo/AM logo.svg"
+          alt="Arita Misus logo"
+        />
+      </a>
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <!-- <li><a class="main-nav-link" href="#parmums">Par mani</a></li> -->
+          <li>
+            <a class="main-nav-link" href="#pakalpojumi">Pakalpojumi</a>
+          </li>
+          <li><a class="main-nav-link" href="#projekti">Portfolio</a></li>
+        
+          <!-- <li><a class="main-nav-link" href="#atsauksmes">Atsauksmes</a></li> -->
+          <li><a class="main-nav-link" href="#kontakti">Kontakti</a></li>
+        </ul>
+      </nav>
+
+      <!-- When navigation is hidden, we show menu icon button, when visible - we show close icon button. -->
+
+      <button class="btn-mobile-nav" aria-label="Izvēlne">
+        <!-- Icons for the button -->
+
+        <!-- Menu icon is the default -->
+        <i
+          class="las la-bars icon-mobile-nav"
+          name="menu-outline"
+          alt="Spied šeit"
+        ></i>
+
+        <!-- Close icon shows up when the navigation is visible -->
+        <i
+          class="las la-times icon-mobile-nav"
+          name="close-outline"
+          alt="Spied šeit"
+        ></i>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO Section -->
+        <section class="hero">
+          <div class="hero-background"></div>
+          <div class="gradient-overlay"></div>
+          <!-- <div class="intro">
+            <h1 class="intro-heading">Mājaslapu izveide</h1>
+            <p class="intro-text">
+              Labākā risinājuma izvēle un realizācija
+            </p> -->
+          </div>
+          
+        </section>
+
+            <!-- SERVICES Section -->
+      <section id="pakalpojumi">
+        <div class="heading-background">
+          <div class="heading-container">
+            <h2 class="heading-secondary">Pakalpojumi</h2>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="services-cards">
+
+            <div class="card">
+              <i class="las la-gem card-icon"></i>
+              <p class="card-title">Mājaslapu & internetveikalu izstrāde</p>
+            </div>
+
+            <div class="card">
+              <i class="las la-search card-icon"></i>
+              <p class="card-title">UX audits & optimizācija</p>
+            </div>
+      
+            <div class="card">
+              <i class="las la-user-friends card-icon"></i>
+              <p class="card-title">Konsultācijas & apmācība</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT Section -->
+        <!-- <section id="parmums" class="about-section">
+          <div class="about-container">
+            <div class="about-content">
+              <div class="left-text">
+                <div class="text-box">
+                  <h2 class="heading-secondary">Par mani</h2> -->
+                  <!-- <p class="scroll-text">Ritini tekstu, lai lasītu vairāk</p> -->
+                  <!-- <div class="text-container">
+                    <p class="about-text">
+                      Palīdzēšu izvēlēties vispiemērotāko mājaslapas izstrādes risinājumu!
+                    </p>
+                    <p class="about-text">
+                      Strādāju gan ar mājaslapu veidošanas platformām, gan ar kodu.
+                    </p>
+                    <p class="about-text">
+                      Esmu arī līdzradītāja sieviešu biznesa kopienai un ikmēneša tīklošanās pasākumam "<a
+                        href="https://www.instagram.com/kontaktu.brokastis/"
+                        target="_blank"
+                        class="about-link"
+                        >Kontaktu brokastis</a
+                      >".
+                    </p> -->
+                
+                    <!-- <p class="about-text">
+                      Uzzini vairāk par mani, apmeklējot manu
+                      <a
+                        href="https://www.instagram.com/arita.misus/"
+                        target="_blank"
+                        class="about-link"
+                        >Instagram profilu</a
+                      >. </p> -->
+                      <!-- <a href="#"
+                      target="_blank">Piesakies konsultācijai</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right-image">
+                <picture>
+                  <source
+                    srcset="img/arita-img2.jpg"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="img/arita-img.jpg"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="img/arita-img.jpg"
+                    alt="Arita Misus foto"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+      <!-- PROJECTS Section -->
+        <section id="projekti">
+          <!-- Heading -->
+          <div class="heading-background">
+            <div class="heading-container">
+              <h2 class="heading-secondary">Projektu piemēri</h2>
+            </div>
+          </div>
+
+          <!--  SWIPER - PROJEKTI - START -->
+          <div class="slider-container projects">
+            <!-- Slider main container -->
+            <div class="swiper swiper2">
+              <!-- Additional required wrapper -->
+                <div class="swiper-wrapper project-wrapper">
+                  <!-- Slides -->
+
+                   <!-- PROJECT 3 -->
+                  <div class="swiper-slide project-slide">
+                    <div class="project project3">
+                      <div class="overlay-desktop">
+                        <div class="text-over">Vizītkartes mājaslapas papildināšana (HTML/CSS/JS)</div>
+                        <button
+                          class="btn-over modal-btn-3"
+                          aria-label="Spied šeit, lai apskatītu bilžu galeriju"
+                        >
+                          Skatīt galeriju
+                        </button>
+                      </div>
+                      <div class="overlay-mobile">
+                        <div class="text-over">Vizītkartes mājaslapas papildināšana (HTML/CSS/JS)</div>
+                        <button
+                          class="btn-over modal-btn-3"
+                          aria-label="Spied šeit, lai apskatītu bilžu galeriju"
+                        >
+                          Skatīt galeriju
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PROJECT 1 -->
+                  <div class="swiper-slide project-slide">
+                    <div class="project project1">
+                      <div class="overlay-desktop">
+                        <div class="text-over">Pārdošanas mājaslapas izveide un administrēšana</div>
+                        <button
+                          class="btn-over modal-btn-1"
+                          aria-label="Spied šeit, lai apskatītu bilžu galeriju"
+                        >
+                          Skatīt galeriju
+                        </button>
+                      </div>
+                      <div class="overlay-mobile">
+                        <div class="text-over">Pārdošanas mājaslapas izveide un administrēšana</div>
+                        <button
+                          class="btn-over modal-btn-1"
+                          aria-label="Spied šeit, lai apskatītu bilžu galeriju"
+                        >
+                          Skatīt galeriju
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                  
+                  <!-- PROJECT 2 -->
+                  <div class="swiper-slide project-slide">
+                      <div class="project project2">
+                        <div class="overlay-desktop">
+                          <div class="text-over">Internetveikala UX audits un optimizācija</div>
+                          <button
+                            class="btn-over modal-btn-2"
+                            aria-label="Spied šeit, lai apskatītu bilžu galeriju"
+                          >
+                            Skatīt galeriju
+                          </button>
+                        </div>
+                        <div class="overlay-mobile">
+                          <div class="text-over">Internetveikala UX audits un optimizācija</div>
+                          <button
+                            class="btn-over modal-btn-2"
+                            aria-label="Spied šeit, lai apskatītu bilžu galeriju"
+                          >
+                            Skatīt galeriju
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+
+                  
+    
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-prev2"></div>
+                <div class="swiper-button-next swiper-button-next2"></div>
+
+            </div>
+          </div>
+
+          <!-- MODAL WINDOWS WITH IMAGE GALLERIES - START-->
+
+          <!-- OVERLAY -->
+          <div class="modal-overlay hidden"></div>
+
+          <!-- --------------------------------------------------- -->
+          <!-- MODAL GALLERY NR.1 - xxx -->
+          <!-- --------------------------------------------------- -->
+
+          <div id="modal1" class="modal-window hidden">
+            <button class="close-modal-1" aria-label="Aizvērt Galeriju">
+              <i class="las la-times" alt="Spied šeit"></i>
+            </button>
+
+            <div class="modal-content">
+              <!-- Slider main container - start -->
+              <div class="swiper modal-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper modal-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/1-proj/proj1-img1.png"
+                        alt="Responsīva, viegli administrējama mājaslapa e-komercijas platformā"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/1-proj/proj1-img2.png"
+                        alt="Sieviešu biznesa kopienas 'Kontaktu brokastis' piezemēšanās lapa ar saiti uz tīklošanās pasākuma biļešu iegādi"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/1-proj/proj1-img3.png"
+                        alt="Tīklošanās pasākuma 'Kontaktu brokastis' biļešu iegāde"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/1-proj/proj1-img4.png"
+                        alt="Pievienošanās tīklošanās pasākuma 'Kontaktu brokastis' gaidītāju sarakstam"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/1-proj/proj1-img5.png"
+                        alt="Tīklošanās pasākuma 'Kontaktu brokastis' attēlu galerija"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/1-proj/proj1-img6.png"
+                        alt="Kontaktforma saziņai ar sieviešu biznesa kopienas 'Kontaktu brokastis' komandu"
+                      />
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination modal-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev modal-btn-prev"></div>
+                <div class="swiper-button-next modal-btn-next"></div>
+              </div>
+              <!-- Slider main container - end -->
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------- -->
+          <!-- MODAL GALLERY NR.2 - xxx -->
+          <!-- --------------------------------------------------- -->
+
+          <div id="modal2" class="modal-window hidden">
+            <button class="close-modal-2" aria-label="Aizvērt Galeriju">
+              <i class="las la-times" alt="Spied šeit"></i>
+            </button>
+
+            <div class="modal-content">
+              <!-- Slider main container - start -->
+              <div class="swiper modal-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper modal-wrapper">
+
+                  <!-- Slides -->
+                   <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/2-proj/proj2-img1.png"
+                        alt="Optimizēts individuāla dizaina produktu interneta veikals"
+                      />
+                    </div>
+                  </div>
+                   <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/2-proj/proj2-img2.png"
+                        alt="Optimizēts individuāla dizaina produktu interneta veikals"
+                      />
+                    </div>
+                  </div>
+                   <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/2-proj/proj2-img3.png"
+                        alt="Optimizēts individuāla dizaina produktu interneta veikals"
+                      />
+                    </div>
+                  </div>
+                   <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/2-proj/proj2-img4.png"
+                        alt="Optimizēts individuāla dizaina produktu interneta veikals"
+                      />
+                    </div>
+                  </div>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination modal-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev modal-btn-prev"></div>
+                <div class="swiper-button-next modal-btn-next"></div>
+              </div>
+              <!-- Slider main container - end -->
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------- -->
+          <!-- MODAL GALLERY NR.3 - xxx -->
+          <!-- --------------------------------------------------- -->
+
+          <div id="modal3" class="modal-window hidden">
+            <button class="close-modal-3" aria-label="Aizvērt Galeriju">
+              <i class="las la-times" alt="Spied šeit"></i>
+            </button>
+
+            <div class="modal-content">
+              <!-- Slider main container - start -->
+              <div class="swiper modal-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper modal-wrapper">
+                  <!-- Slides -->
+                  <!-- Slides -->
+                   <div class="swiper-slide modal-slide">
+                    <div class="modal-img swiper-zoom-container">
+                      <img
+                        src="img/3-proj/proj3-img1.png"
+                        alt="Responsīva vizītkartes mājaslapa ar dizaina portfolio galeriju - custom code: html/css/js"
+                      />
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination modal-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev modal-btn-prev"></div>
+                <div class="swiper-button-next modal-btn-next"></div>
+              </div>
+              <!-- Slider main container - end -->
+            </div>
+          </div>
+          
+
+          <!-- MODAL WINDOWS WITH IMAGE GALLERIES - END-->
+        </section>
+
+
+
+    <!-- TESTIMONIALS Section -->
+      <!-- <section id="atsauksmes"> -->
+        <!-- Heading -->
+        <!-- <div class="heading-background">
+          <div class="heading-container">
+            <h2 class="heading-secondary">Atsauksmes</h2>
+          </div>
+        </div> -->
+
+        <!--  SWIPER - TESTIMONIALS - START -->
+        <!-- <div class="slider-container testimonials"> -->
+         
+          <!-- Slider main container -->
+          <!-- <div class="swiper swiper1"> -->
+           
+            <!-- Additional required wrapper -->
+            <!-- <div class="swiper-wrapper"> -->
+              
+              <!-- Slides -->
+              <!-- <div class="swiper-slide testimonial-slide">
+                <div class="testimonial-container">
+                  <p class="testimonial-name">Anna A.</p>
+                  <p class="testimonial-text">
+                    Liels paldies, Arita! Man viss patīk, ļoti ātra un patīkama sadarbība ar Tevi! 
+                  </p>
+                  <span class="testimonial-icons"
+                    ><i class="las la-star"></i><i class="las la-star"></i
+                    ><i class="las la-star"></i><i class="las la-star"></i
+                    ><i class="las la-star"></i>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+            //If we need pagination 
+            <div class="swiper-pagination swiper-pagination1"></div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- Contact Section-->
+      <section id="kontakti">
+        <div class="contact container">
+          <h2 class="heading-secondary">Kontakti</h2>
+
+          
+
+          <div class="contact-info">
+            <img src="/img/arita-img2.jpg" alt="arita-misus" class="avatar">
+            <p>Arita Misus</p>
+            <a href="mailto:arita.misus@gmail.com" class="contact-link"
+              >arita.misus@gmail.com
+            </a>
+            
+          <!-- </div>
+          <div class="contact-info">
+            <p>Sazinies ar mani:</p>
+            <p class="anna">Arita Misus</p>
+            <p>Mājaslapu izstrādatāja</p>
+            <a href="tel:+371 12345678" class="contact-link">+371 12345678</a>
+            <a href="mailto:arita.misus@gmail.com" class="contact-link"
+              >arita.misus@gmail.com
+            </a>
+          </div> -->
+          
+          <div class="social-icon-links">
+            <a
+              href="https://www.facebook.com/aritapdn"
+              target="_blank"
+              aria-label="Apskati Aritas Facebook"
+              ><i class="lab la-facebook social-icon"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/arita.misus/"
+              target="_blank"
+              aria-label="Apskati Aritas Instagram"
+              ><i class="lab la-instagram social-icon"></i
+            ></a>
+
+            <!-- <a
+              href="https://www.linkedin.com/in/arita-misus/"
+              target="_blank"
+              aria-label="Apskati Aritas Linkedin"
+              ><i class="lab la-linkedin social-icon"></i
+            ></a> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer container">
+        <p class="copyright">
+          &copy; <span class="year">2025</span> Arita Misus
+        </p>
+      </div>
+    </footer>
+
+    <!-- Image -->
+    <!-- <section class="end-section">
+      <div class="decorative-background"></div>
+    </section> -->
+
+    <!-- Swiper.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript files -->
+    <script defer src="js/script.js"></script>
+    <script defer src="js/swiper.js"></script>
+    <script defer src="js/modal.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+  </body>
+</html>

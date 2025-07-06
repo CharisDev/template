@@ -1,0 +1,88 @@
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
+
+/* SLIDER CONTAINER */
+/* Contains swiper and swiper slides */
+.slider-container.testimonials {
+  /* background-color: #3a3a3c; */
+  background-color: #000;
+  border-bottom: solid 4.4rem #000;
+}
+
+/* SWIPER MAIN CONTAINER */
+.swiper1 {
+  max-width: 150rem;
+  padding: 0 3.2rem;
+  /* background-color: #80785b; */
+}
+
+/* SWIPER SLIDES */
+.swiper-slide.testimonial-slide {
+  padding: 0 1rem;
+}
+
+/* TESTIMONIALS CONTAINERS FOR TEXT AND ICONS */
+.testimonial-container {
+  /* color: #fff; */
+  color: #333;
+  /* background-color: #ada483; */
+  background-color: rgba(0, 0, 0, 0.9);
+
+  height: 30rem;
+  padding: 2rem 4rem 2rem 4rem;
+  margin: 4rem 0 8rem 0;
+
+  /* border: 0.1rem solid #808080; */
+  border: 0.1rem solid #858d5d;
+  box-shadow: rgba(128, 128, 128, 0.2) 0 0 1rem;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* NAME */
+.testimonial-name {
+  font-size: 1.8rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* TEXT */
+.testimonial-text {
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+/* ICONS */
+.la-heart,
+.la-star {
+  font-size: 3rem;
+  color: #af9d90;
+}
+
+/* PAGINATION */
+.swiper-pagination.swiper-pagination1 {
+  margin: 2rem 0;
+}
+
+/* target all bullets */
+.swiper1 .swiper-pagination-bullet {
+  background-color: #6f6f6f;
+  opacity: 1;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+/* target the active bullet */
+.swiper1 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+  height: 0.9rem;
+  width: 0.9rem;
+}
